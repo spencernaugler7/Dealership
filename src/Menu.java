@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Menu {
     private static Scanner console = new Scanner(System.in);
+
     public static void main(String[] args)
     {
         menu();
@@ -13,7 +14,7 @@ public class Menu {
         {
             String choice = "";
             try {
-                System.out.printf("1 if you are a customer\n 2 if you are an employee\n3 to exit");
+                System.out.println("1 if you are a customer\n 2 if you are an employee\n3 to exit");
                 choice = console.nextLine();
 
             } catch(Exception e){
@@ -24,8 +25,6 @@ public class Menu {
             {
 
             } else if(choice.equals("2")){
-
-
 
             } else {
                 done = true;
