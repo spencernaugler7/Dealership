@@ -4,13 +4,13 @@ public class Menu {
 
     public static void main(String[] args)
     {
-        menu();
+        Dealer dealer = new Dealer();
+        dealer.crawlXml(); // collects xml data before it does anything
+        menu(dealer);
     }
 
-    public static void menu(){
-        boolean done = false;
-
-        while(!done)
+    public static void menu(Dealer dealer){
+        while(true)
         {
             String choice = "";
             try {
@@ -21,14 +21,15 @@ public class Menu {
                 System.err.println("you did not enter 1, 2, or 3");
             }
 
+            // decide based on choice
             if(choice.equals("1"))
             {
-
+                dealer.newcustomer();
             } else if(choice.equals("2")){
-
+                dealer.employee()
             } else {
-                done = true;
                 System.out.println("Goodbye");
+                break;
             }
         }
     }

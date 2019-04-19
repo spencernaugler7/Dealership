@@ -3,33 +3,33 @@
     <vehicle type="SUV">
         <make>Acura</make>
         <model>MDX</model>
-        <capacity>5<capacity/>
+        <capacity>5</capacity>
         <mpg>25</mpg>
-        <transmission>auto</transmission>
-        <avalibility>1</avalibility>
+        <trans>auto</trans>
+        <availability>true</availability>
     </vehicle>
     <vehicle type="Standard">
         <make>Mazda</make>
         <model>6</model>
-        <capacity>5<capacity/>
+        <capacity>5</capacity>
         <mpg>35</mpg>
-        <transmission>auto</transmission>
-        <avalibility>1</avalibility>
+        <trans>auto</trans>
+        <availability>true</availability>
     </vehicle>
     <vehicle type="Compact">
         <make>Honda</make>
         <model>Civic</model>
-        <capacity>5<capacity/>
+        <capacity>5</capacity>
         <mpg>40</mpg>
-        <transmission>auto</transmission>
-        <avalibility>1</avalibility>
+        <trans>auto</trans>
+        <availability>true</availability>
     </vehicle>
     <vehicle type="Pickup">
         <make>Ford</make>
-        <model>F-150</model>
-        <capacity>5<capacity/>
+        <model>F-true50</model>
+        <capacity>5</capacity>
         <mpg>20</mpg>
-        <transmission>auto</transmission>
-        <avalibility>1</avalibility>
+        <trans>auto</trans>
+        <availability>true</availability>
     </vehicle>
 </vehicles>
