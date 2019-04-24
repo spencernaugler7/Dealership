@@ -14,7 +14,7 @@ public class Menu {
         {
             String choice = "";
             try {
-                System.out.println("1 if you are a customer\n 2 if you are an employee\n3 to exit");
+                System.out.println("1 if you are a customer\n2 if you are an employee\n3 to exit\n");
                 choice = console.nextLine();
 
             } catch(Exception e){
@@ -26,7 +26,7 @@ public class Menu {
             {
                 dealer.newcustomer();
             } else if(choice.equals("2")){
-                dealer.employee()
+                dealer.employee();
             } else {
                 System.out.println("Goodbye");
                 break;

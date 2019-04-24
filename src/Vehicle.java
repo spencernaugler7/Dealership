@@ -14,6 +14,7 @@ public class Vehicle
     public Vehicle(String type, String make, String model, String capacity,
                    String mpg, String trans, boolean avalible)
     {
+        this.type = type;
         this.make = make;
         this.model = model;
         this.capacity = capacity;
@@ -51,7 +52,7 @@ public class Vehicle
     Minivan*/
     public double calcPrice()
     {
-        double price = 0.00;
+        double price;
         if(type.equals("Economy"))
         {
             price = 24.00;
@@ -67,5 +68,14 @@ public class Vehicle
             price = 35.00;
         }
         return price;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("%s %s\nType: %s\nCapacity: %s\nMpg: %s\nTransmission Type: %s\n" +
+                "Price Per Day: %.2f\nId: %d\n",
+            this.getMake(), this.getModel(), this.getType(),
+            this.getCapacity(), this.getMpg(), this.getTrans(),
+            this.calcPrice(), this.getId());
     }
 }

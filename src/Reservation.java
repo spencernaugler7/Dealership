@@ -28,9 +28,10 @@ public class Reservation
 
     // getters for updating data, via employee class
     public String getPickupLoc() { return this.pickupLoc; }
-    public String getreturnLoc() { return this.returnLoc; }
+    public String getReturnLoc() { return this.returnLoc; }
     public String getPickupDate() { return this.pickupDate; }
     public String getReturnDate() { return this.returnDate; }
+    public int getCustomerid(){ return this.customerid; }
 
     // setters for updating data, via employee class
     public void setPickupLoc(String pickupLoc){ this.pickupLoc = pickupLoc; }
@@ -51,13 +52,5 @@ public class Reservation
         long diff = returnDate.getTime() - pickupDate.getTime();
         return (int) TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 
-    }
-
-    @Override
-    public String toString()
-    {
-        return String.format("Customer id renting: %s\nPickup Location: %s\nReturn Location: %s\n" +
-            "Pickup Date: %s\nReturn Date: %s\nTotal Days Rented %d", customerid, pickupLoc, returnLoc,
-            pickupDate, returnDate, calcDaysRented());
     }
 }
